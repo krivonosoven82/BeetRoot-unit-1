@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  padding-top: 100px;
+}
+
+.section{
+  background-color: #fdde7e;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+.section__canvas{
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  padding: 43px 0 37px 0;
+}
+
+.section__canvas:hover{
+  background-color: #cab256;
+}
+
+.section__canvas--gold{
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 361px;
+  padding: 53px 0 56px 0;
+}
+
+.canvas__title{
+  font-family: "miso-bold", sans-serif;
+  font-size: 70px;
+  color: #029956;
+}
+
+.canvas__smoke{
+  position: relative;
+  right: 10px;
+  width: 49px;
+  height: 46px;
+  margin: 11px 0;
+}
+
+.canvas__smoke--gold{
+  margin: 35px 0 11px 0;
+}
+
+.canvas__cup{
+  width: 135px;
+  height: 77px;
+  margin-bottom: 38px;
+}
+
+.canvas__cup--gold{
+  margin-bottom: 47px;
+}
+
+.canvas__bean{
+  position: relative;
+  bottom: 65px;
+  right: 10px;
+  width: 36px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.canvas__name{
+  font-family: "miso", sans-serif;
+  font-size: 56px;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+.canvas__info{
+  font-family: "LatoLight", sans-serif;
+  font-size: 20px;
+  color: #333;
+}
