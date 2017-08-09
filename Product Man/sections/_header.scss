@@ -1,0 +1,155 @@
+.header{
+  background-color: $headerBackground;
+  width: 100%;
+  max-width: 1500px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 84px;
+  color: $headerText;
+}
+
+.wrap{
+  width: 100%;
+  max-width: 1198px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+
+  &__top{
+    width: 100%;
+    height: 84px;
+    position: relative;
+
+    &__logo{
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      letter-spacing: 0.025em;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__nav{
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__link{
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: 0.025em;
+      margin-left: 48px;
+      padding: 0 5px;
+      text-decoration: none;
+      color: $headerText;
+      @include transition(0.4s);
+      &:hover{
+        background-color: $headerText;
+        color: $headerHoverLink;
+      }
+
+    }
+
+    &__icon{
+      margin-left: 35px;
+      padding: 0 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: $headerIcon;
+      cursor: pointer;
+      &:hover{
+        background-color: $headerText;
+        color: $headerHoverLink;
+      }
+    }
+  }
+
+  &__content{
+    width: 615px;
+    height: 491px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 198px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__title{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      font-size: 150px;
+      letter-spacing: 0.025em;
+      line-height: 150px;
+      text-transform: uppercase;
+      text-align: right;
+      padding-bottom: 15px;
+    }
+
+    &__text{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      letter-spacing: 0.025em;
+      line-height: 36px;
+      text-align: right;
+    }
+
+    &__text2{
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: 0.025em;
+      line-height: 36px;
+      color: $headerText2;
+      text-align: right;
+    }
+  }
+
+
+  &__img{
+    width: 395px;
+    height: 491px;
+    position: absolute;
+    top: 198px;
+    right: 102px;
+    overflow: hidden;
+
+    &__photo{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__change{
+    width: 51px;
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 102px;
+
+    &__btn{
+      border: none;
+      border-radius: 50%;
+      background-color: $headerText;
+      width: 11px;
+      height: 11px;
+      cursor: pointer;
+      @include transition(0.4s);
+      &:hover{
+        background-color: $headerHoverBtn;
+      }
+    }
+  }
+}
