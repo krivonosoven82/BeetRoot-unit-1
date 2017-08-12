@@ -1,0 +1,174 @@
+body {
+  font-family: 'MuseoSansLight', 'Arial', sans-serif; }
+
+@font-face {
+  font-family: 'MuseoSansLight';
+  src: url("../fonts/MuseoSansLight.eot");
+  src: url("../fonts/MuseoSansLight.eot?iefix") format("eot"), url("../fonts/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight.ttf") format("truetype"), url("../fonts/MuseoSansLight.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0; }
+
+.wrap {
+  padding-top: 70px; }
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding: auto 25px;
+  background: url(../img/Group-3-copy.png) no-repeat center, url(../img/Layer-51.png) no-repeat center, url(../img/Layer-6.png) no-repeat center, #d0d0d2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.content {
+  background-color: #111a28;
+  width: 100%;
+  max-width: 686px;
+  height: 391px;
+  position: relative; }
+  .content__header {
+    width: 100%;
+    height: 71px;
+    margin-bottom: 6px;
+    padding: 20px 0 0 20px; }
+    .content__header__logo {
+      width: 70px;
+      height: 40px;
+      overflow: hidden; }
+      .content__header__logo__img {
+        width: 100%;
+        height: 100%; }
+  .content__product {
+    width: 58.6%;
+    height: 259px;
+    margin-bottom: 17px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .content__form {
+    width: 28.7%;
+    height: 259px;
+    position: absolute;
+    right: 7%; }
+    .content__form__name {
+      font-size: 24px;
+      letter-spacing: 0.02em;
+      color: #e1e1e1; }
+    .content__form__text {
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: #49505a; }
+    .content__form__stars {
+      padding: 25px 0; }
+    .content__form__box {
+      width: 140px;
+      height: 34px;
+      margin-bottom: 29px;
+      position: relative; }
+    .content__form__select {
+      border: 1px solid #49505a;
+      width: 64px;
+      height: 32px;
+      margin-right: 2px;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      position: relative;
+      background: transparent;
+      -webkit-appearance: none;
+      padding-left: 10px;
+      color: #49505a;
+      cursor: pointer; }
+      .content__form__select:focus {
+        border-color: #e1e1e1; }
+    .content__form__btn {
+      background-color: #202835;
+      border: 1px solid #49505a;
+      width: 184px;
+      height: 40px;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: #49505a; }
+      .content__form__btn:hover {
+        background-color: #389be6;
+        color: #e1e1e1; }
+  .content__selection {
+    width: 82px;
+    height: 22px;
+    padding: 0 2px;
+    position: absolute;
+    bottom: 17px;
+    left: 25.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .content__selection__click {
+      border: 2px solid transparent;
+      border-radius: 50%;
+      width: 9px;
+      height: 9px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .content__selection__click--blue {
+        background-color: #1f273f; }
+      .content__selection__click--white {
+        background-color: #ffffff; }
+      .content__selection__click--red {
+        background-color: #ed3333; }
+      .content__selection__click--lightblue {
+        background-color: #29e3ea; }
+
+.fa-star {
+  font-size: 12px;
+  color: #9da1a6;
+  cursor: pointer; }
+
+.fa-star--gold {
+  color: #f7bf16; }
+
+.fa-angle-down {
+  position: absolute;
+  right: 13px;
+  top: 8px;
+  color: #49505a; }
+
+.fa-angle-down--left {
+  left: 45px;
+  position: absolute; }
+
+.click__large {
+  border: 2px solid #49505a;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  opacity: 0; }
+  .click__large:hover {
+    opacity: 1; }
+  .click__large--blue {
+    background-color: #1f273f; }
+  .click__large--white {
+    background-color: #ffffff; }
+  .click__large--red {
+    background-color: #ed3333; }
+  .click__large--lightblue {
+    background-color: #29e3ea; }
+
+/*# sourceMappingURL=main.css.map */
