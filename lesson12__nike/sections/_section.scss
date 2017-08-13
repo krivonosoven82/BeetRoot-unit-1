@@ -18,6 +18,7 @@
 
 .content{
   background-color: $contentBackground;
+  box-shadow: 0 0 50px  10px rgba(0,0,0,0.5);
   width: 100%;
   max-width: 686px;
   height: 391px;
@@ -194,7 +195,7 @@
   height: 14px;
   position: absolute;
   opacity: 0;
-  @include transition; 
+  @include transition;
 
   &:hover{
     opacity: 1;
