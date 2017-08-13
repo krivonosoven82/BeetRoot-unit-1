@@ -113,6 +113,7 @@
       font-size: 14px;
       letter-spacing: 0.02em;
       color: $text;
+      @include transition;
 
       &:hover {
         background-color: $btnHover;
@@ -193,6 +194,7 @@
   height: 14px;
   position: absolute;
   opacity: 0;
+  @include transition; 
 
   &:hover{
     opacity: 1;
