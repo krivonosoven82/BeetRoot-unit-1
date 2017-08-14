@@ -1,0 +1,21 @@
+.section-five{
+  width: 100%;
+  padding: 0 335px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__photo{
+    width: 100%;
+    max-width: 263px;
+    height: 335px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+  }
+}
