@@ -6,10 +6,21 @@
   justify-content: space-around;
   color: $headerText;
 
+  &__empty{
+    position: absolute;
+    top: 23px;
+    width: 70px;
+    height: 20px;
+    background-color: $backgroundIcon;
+  }
+
   &__content{
     width: 100%;
     max-width: 585px;
     padding: 0 15px;
+    position: relative;
+
+
 
     &__title{
     font-family: 'Montserrat';

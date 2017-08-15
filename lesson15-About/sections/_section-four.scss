@@ -5,6 +5,16 @@
   flex-direction: column;
   align-items: center;
   color: $headerText;
+  position: relative;
+
+  &__empty{
+    position: absolute;
+    top: 23px;
+    left: 590px;
+    width: 70px;
+    height: 20px;
+    background-color: $backgroundIcon;
+  }
 
   &__title{
     padding-bottom: 20px;
@@ -14,6 +24,7 @@
     line-height: 48px;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
 
   }
 

@@ -7,6 +7,15 @@
   color: $headerText;
   position: relative;
 
+  &__empty{
+    position: absolute;
+    top: 23px;
+    left: 605px;
+    width: 70px;
+    height: 20px;
+    background-color: $backgroundIcon;
+  }
+
   &__title{
     padding-bottom: 20px;
     font-family: 'Montserrat';
@@ -15,6 +24,7 @@
     line-height: 48px;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
   }
 
   &__text{
