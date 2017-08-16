@@ -92,6 +92,7 @@ body {
   width: 100%;
   padding: 150px 220px 150px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   color: #60606e; }
@@ -135,7 +136,7 @@ body {
   .section-two__empty {
     position: absolute;
     top: 23px;
-    left: 605px;
+    left: 43.5%;
     width: 70px;
     height: 20px;
     background-color: #7beec7; }
@@ -210,7 +211,7 @@ body {
   .section-four__empty {
     position: absolute;
     top: 23px;
-    left: 590px;
+    left: 42.5%;
     width: 70px;
     height: 20px;
     background-color: #7beec7; }
@@ -254,11 +255,13 @@ body {
   padding: 50px 235px;
   background-color: #7beec7;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; }
   .footer__question {
     width: 100%;
-    max-width: 560px; }
+    max-width: 560px;
+    margin-bottom: 30px; }
     .footer__question__title {
       font-family: 'Montserrat';
       font-weight: bold;

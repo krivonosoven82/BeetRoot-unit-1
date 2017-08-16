@@ -3,12 +3,14 @@
   padding: 50px 235px;
   background-color: $backgroundIcon;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 
   &__question{
     width: 100%;
     max-width: 560px;
+    margin-bottom: 30px;
 
     &__title{
       font-family: 'Montserrat';

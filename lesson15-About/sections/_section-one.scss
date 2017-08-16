@@ -2,6 +2,7 @@
   width: 100%;
   padding: 150px 220px 150px;;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   color: $headerText;
