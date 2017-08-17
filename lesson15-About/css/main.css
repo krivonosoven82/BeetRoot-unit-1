@@ -112,7 +112,8 @@ body {
       font-weight: bold;
       font-size: 30px;
       text-transform: uppercase;
-      line-height: 48px; }
+      line-height: 48px;
+      position: relative; }
     .section-one__content__subtitle {
       font-family: 'Open Sans';
       font-weight: bolder;
@@ -136,7 +137,7 @@ body {
   .section-two__empty {
     position: absolute;
     top: 23px;
-    left: 43.5%;
+    left: 43%;
     width: 70px;
     height: 20px;
     background-color: #7beec7; }
@@ -211,7 +212,7 @@ body {
   .section-four__empty {
     position: absolute;
     top: 23px;
-    left: 42.5%;
+    left: 42%;
     width: 70px;
     height: 20px;
     background-color: #7beec7; }
