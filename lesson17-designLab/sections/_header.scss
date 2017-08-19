@@ -1,0 +1,65 @@
+.header{
+  @include size(100, auto);
+  min-height: 100vh;
+  padding: 280px 0 115px 0;
+  background: url(../img/hero-bg.jpg) center no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo{
+    @include size(85px, 85px);
+    margin-bottom: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+      @include size(100%, 100%);
+    }
+  }
+
+    &__title{
+      @include fonts('Lato', 700, 54px, auto, 0.16em, $white);
+      text-transform: uppercase;
+
+      &--mb{
+        margin-bottom: 35px;
+      }
+    }
+
+    &__text{
+      @include fonts('Lato', 400, 15px, 29px, 0.06em, $white);
+      text-transform: uppercase;
+
+      &--mb{
+        margin-bottom: 235px;
+      }
+    }
+
+
+  &__btn{
+    @include size(23px, 37px);
+    border: 2px solid $white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    @include transition;
+
+    &:hover{
+      background-color: $black;
+    }
+
+    &__dot{
+      @include size(3px, 3px);
+      border: 1px solid $white;
+      position: absolute;
+      top: 10px;
+      animation: custom-animate 4s infinite;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+body{
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+@keyframes custom-animate {
+  0% {
+    transform: translateY(0) translateX(-40%);
+  }
+  50% {
+    transform: translateY(10px) translateX(-40%);
+    border-color: red;
+  }
+  100% {
+    transform: translateY(0) translateX(-40%);
+  }
+}

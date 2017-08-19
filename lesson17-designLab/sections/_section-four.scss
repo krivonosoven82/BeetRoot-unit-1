@@ -1,0 +1,35 @@
+.section-four{
+  @include size(100%, auto);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__item{
+    @include size(24.5%, 238px);
+    margin-bottom: 0.5%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    &--large{
+      @include size(49.5%, 238px);
+    }
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  &__img{
+    @include size(100%, 100%);
+  }
+
+  &__text{
+    @include fonts('Lato', 700, 34px, auto, 0.16em, $white);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+}
