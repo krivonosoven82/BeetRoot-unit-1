@@ -4,13 +4,13 @@ body{
 
 @keyframes custom-animate {
   0% {
-    transform: translateY(0) translateX(-40%);
+    transform: translateY(0) translateX(-50%);
   }
   50% {
-    transform: translateY(10px) translateX(-40%);
-    border-color: red;
+    transform: translateY(10px) translateX(-50%);
+    border-color: $red;
   }
   100% {
-    transform: translateY(0) translateX(-40%);
+    transform: translateY(0) translateX(-50%);
   }
 }

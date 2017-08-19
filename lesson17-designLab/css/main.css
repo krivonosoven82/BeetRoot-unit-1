@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-body {
-  font-family: 'Lato', Arial, sans-serif; }
-
-@keyframes custom-animate {
-  0% {
-    transform: translateY(0) translateX(-40%); }
-  50% {
-    transform: translateY(10px) translateX(-40%);
-    border-color: red; }
-  100% {
-    transform: translateY(0) translateX(-40%); } }
 *,
 *::after,
 *::before {
@@ -17,6 +6,17 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: 'Lato', Arial, sans-serif; }
+
+@keyframes custom-animate {
+  0% {
+    transform: translateY(0) translateX(-50%); }
+  50% {
+    transform: translateY(10px) translateX(-50%);
+    border-color: #a30707; }
+  100% {
+    transform: translateY(0) translateX(-50%); } }
 .header {
   width: 100;
   height: auto;
@@ -63,8 +63,6 @@ body {
     height: 37px;
     border: 2px solid #fff;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
     position: relative;
     cursor: pointer;
     transition: all 0.4s ease-in-out; }
@@ -76,6 +74,8 @@ body {
       border: 1px solid #fff;
       position: absolute;
       top: 10px;
+      left: 50%;
+      transition: translateX(-50%);
       animation: custom-animate 4s infinite; }
 
 .section-one {

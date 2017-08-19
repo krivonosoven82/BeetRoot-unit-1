@@ -44,8 +44,6 @@
     @include size(23px, 37px);
     border: 2px solid $white;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
     position: relative;
     cursor: pointer;
     @include transition;
@@ -59,6 +57,8 @@
       border: 1px solid $white;
       position: absolute;
       top: 10px;
+      left: 50%;
+      transition: translateX(-50%);
       animation: custom-animate 4s infinite;
     }
   }
