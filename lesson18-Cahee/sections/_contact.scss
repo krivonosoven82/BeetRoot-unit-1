@@ -1,0 +1,111 @@
+.contact{
+  @include size(100%, auto);
+  background: url(../img/contact/img.png) no-repeat center / cover;
+
+
+  &__wrap{
+      @include size(100%, auto);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 15px 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  &__title{
+      @include fonts('Conv_Raleway-Bold', 90px, $black);
+      text-transform: capitalize;
+      margin-bottom: 40px;
+  }
+
+  &__text{
+    width: 370px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__form{
+    width: 100%;
+    max-width: 500px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info{
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__input{
+    @include size(500px, 50px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: $inputContact;
+    border: none;
+    border-left: 5px solid transparent;
+    @include fonts('Conv_Raleway-Bold', 15px, $white);
+
+    &:focus{
+      background-color: $inputContactFocus;
+      border-left-color: $inputBorder;
+    }
+  }
+
+  &__textarea{
+    @include size(500px, 250px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: $inputContact;
+    border: none;
+    border-left: 5px solid transparent;
+    @include fonts('Conv_Raleway-Bold', 15px, $white);
+
+    &:focus{
+      background-color: $inputContactFocus;
+      border-left-color: $inputBorder;
+
+  }
+}
+
+  &__btn{
+    @include size(200px, 55px);
+    background-color: $btnContact;
+    border: none;
+    @include fonts('Conv_Raleway-Light', 20px, $white);
+    text-transform: uppercase;
+    @include transition;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__subtitle{
+    @include fonts('Conv_Raleway-Bold', 17px, $black);
+    text-transform: uppercase;
+  }
+
+  &__infotext{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+::-webkit-input-placeholder{
+  @include fonts('Conv_Raleway-Light', 15px, $white);
+
+  &:focus{
+    @include fonts('Conv_Raleway-Bold', 15px, $white);
+  }
+}

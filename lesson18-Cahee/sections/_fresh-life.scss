@@ -1,0 +1,108 @@
+.fresh-life{
+  @include size(100%, 100%);
+  background: url(../img/freshLife/img.jpg) no-repeat center center/cover;
+  padding: 0 15px;
+
+  &__wrap{
+    @include size(100%, 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+.header{
+    @include size(100%, 147px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+
+    &__logo{
+      @include fonts('Conv_Pacifico-Regular', 50px, $black);
+      line-height: 1.25em;
+    }
+
+    &__nav{
+      @include size(100%, auto);
+      max-width: 570px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+
+    &__links{
+      display: inline-block;
+      padding: 9px 5px;
+      @include fonts('Conv_Raleway-Bold', 16px, $black);
+      text-decoration: none;
+      text-transform: uppercase;
+      border-top: 3px solid transparent;
+      @include transition;
+
+      &:hover{
+        border-top-color: $btnFreshLite;
+      }
+    }
+ }
+
+ .content{
+   padding: 15px 5px;
+   @include size(100%, auto);
+   max-width: 400px;
+   margin-bottom: 280px;
+
+   &__title{
+     @include fonts('Conv_raleway.heavy', 60px, $black);
+     text-transform: capitalize;
+     margin-bottom: 25px;
+   }
+
+   &__text{
+     line-height: 27px;
+   }
+
+   &__btn{
+     @include size(200px, 55px);
+     margin-top: 25px;
+     @include fonts('Conv_Raleway-Light', 20px, $white);
+     text-transform: uppercase;
+     background-color: $btnFreshLite;
+     color: $white;
+     border: none;
+     cursor: pointer;
+     @include transition;
+
+     &:hover{
+       box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4);
+     }
+   }
+ }
+
+ .scroll{
+   display: block;
+   @include size(24px, 40px);
+   margin: 0 auto;
+   border: 2px solid $black;
+   border-radius: 10px;
+   margin-bottom: 70px;
+   position: relative;
+   @include transition;
+
+   &:hover{
+     background-color: $btnFreshLite;
+   }
+
+   &::after{
+     content: '';
+     @include size(4px, 11px);
+     border-radius: 2px;
+     background-color: $black;
+     position: absolute;
+     top: 5px;
+     left: 8px;
+     transition: translateX(-50%);
+   }
+ }

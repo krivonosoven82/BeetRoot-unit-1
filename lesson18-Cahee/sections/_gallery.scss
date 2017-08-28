@@ -1,0 +1,101 @@
+.gallery{
+  @include size(100%, auto);
+  background-color: $yellow;
+
+
+  &__wrap{
+      @include size(100%, auto);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 10px 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+
+  &__title{
+    @include fonts('Conv_Raleway-Bold', 90px, $black);
+    text-transform: capitalize;
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    max-width: 625px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__content{
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__box{
+    width: 100%;
+    max-width: 770px;
+    height: 550px;
+    background-color: $galleryBackgroungImg;
+    overflow: hidden;
+    @include transition;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    &--small{
+      width: 100%;
+      max-width: 370px;
+      height: 260px;
+    }
+
+    &--mb{
+      margin-bottom: 30px;
+    }
+
+  &--mr{
+      margin-right: 10px;
+    }
+
+    &--middle{
+      width: 100%;
+      max-width: 570px;
+      height: 400px;
+    }
+  }
+
+  &__container{
+    width: 100%;
+    max-width: 370px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__img{
+    @include size(100%, 100%);
+    object-fit: cover;
+  }
+
+  &__btn{
+    @include size(200px, 55px);
+    background-color: $btnGallery;
+    border: none;
+    cursor: pointer;
+    @include fonts('Conv_Raleway-Light', 20px, $white);
+    text-transform: uppercase;
+    @include transition;
+
+    &:hover{
+      box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

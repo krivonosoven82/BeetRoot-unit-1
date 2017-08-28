@@ -1,0 +1,85 @@
+.ourServices{
+  @include size(100%, auto);
+  background-color: $blue;
+
+
+  &__wrap{
+      @include size(100%, auto);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 15px 130px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  &__box{
+    @include size(585px, 565px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+  &__img{
+   @include size(100%, 100%);
+  }
+
+  &__title{
+    position: absolute;
+    text-transform: capitalize;
+    @include fonts('Conv_Raleway-Bold', 90px, $white);
+
+  }
+
+  &__content{
+    @include size(100%, auto);
+    max-width: 435px;
+    margin-right: 20px;
+    padding: 90px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__label{
+    max-width: 400px;
+    position: relative;
+    cursor: pointer;
+ }
+
+  &__btn{
+    @include size(400px, 100px);
+    margin-bottom: 20px;
+    padding-right: 100px;
+    background-color: $white;
+    border: transparent;
+    @include fonts('Conv_Raleway-Bold', 20px, $black);
+    text-transform: capitalize;
+    cursor: pointer;
+    @include transition;
+
+    &:hover{
+      box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__container{
+    @include size(100px, 100px);
+    border-left: 1px solid $gray;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__icon{
+    object-fit: cover;
+  }
+}

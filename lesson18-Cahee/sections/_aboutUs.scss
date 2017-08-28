@@ -1,0 +1,45 @@
+.aboutUs{
+  @include size(100%, auto);
+  background-color: $green;
+
+  &__wrap{
+      @include size(100%, auto);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  &__box{
+    @include size(615px, 615px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &__img{
+     @include size(100%, 100%);
+     object-fit: cover;
+    }
+  }
+
+  &__content{
+    @include size(100%, auto);
+    max-width: 535px;
+    padding: 130px 10px 0;
+  }
+
+  &__title{
+    @include fonts('Conv_Raleway-Bold', 90px, $white);
+    text-transform: capitalize;
+    padding-bottom: 25px;
+  }
+
+  &__text{
+    color: $white;
+    line-height: 27px;
+    margin-top: 15px;
+  }
+}

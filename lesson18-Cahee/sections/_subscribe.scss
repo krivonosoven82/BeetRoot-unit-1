@@ -1,0 +1,60 @@
+.subscribe{
+  @include size(100%, auto);
+  background: url(../img/subscribe/bg.jpg) right  no-repeat;
+
+  &__wrap{
+      @include size(100%, auto);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 140px 15px 160px;
+  }
+
+  &__title{
+    @include fonts('Conv_Raleway-Bold', 40px, $black);
+    text-transform: capitalize;
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    max-width: 570px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+
+  &__form{
+    @include size(100%, auto);
+    max-width: 800px;
+    display: flex;
+  }
+
+  &__input{
+    @include size(570px, 55px);
+    margin-right: 30px;
+    padding: 0 15px;
+    border: 1px solid $black;
+    font-size: 17px;
+
+    &:focus{
+      border-color: $btnSubscribe;
+    }
+  }
+
+  &__btn{
+    @include size(170px, 55px);
+    background-color: $btnSubscribe;
+    border: none;
+    @include fonts('Conv_Raleway-Light', 20px, $white);
+    text-transform: uppercase;
+    @include transition;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+::-webkit-input-placeholder{
+  @include fonts('Conv_Raleway-Light', 15px, $black);
+  opacity: 0.5;
+}

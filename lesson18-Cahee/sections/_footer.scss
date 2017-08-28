@@ -1,0 +1,34 @@
+.footer{
+  @include size(100%, auto);
+  background-color: $black;
+
+
+  &__wrap{
+      @include size(100%, 90px);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  &__copy{
+    font-size: 16px;
+    color: $gray;
+  }
+
+  &__logo{
+    @include fonts('Conv_Pacifico-Regular', 25px, $gray);
+    text-decoration: none;
+  }
+
+  &__text{
+    font-size: 15px;
+    color: $gray;
+  }
+
+  &__span{
+    @include fonts('Conv_Raleway-Bold', 15px, $pink);
+  }
+}
