@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Conv_Proxima Nova Light', 'Conv_Proxima Nova Bold', 'Conv_Proxima Nova Semibold', 'FontAwesome', Arial, sans-serif; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  min-height: 895px;
+  position: relative; }
+  .header__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .header__img {
+    width: 100%;
+    height: 100%; }
+  .header__wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    padding-top: 40px; }
+  .header__top {
+    width: 100%;
+    height: auto;
+    margin-bottom: 255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    width: 225px;
+    height: 90px; }
+  .header__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .header__links {
+    margin-right: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Conv_Proxima Nova Semibold";
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.35em;
+    transition: all 0.4s ease-in-out; }
+    .header__links--notmr {
+      margin: 0; }
+    .header__links:hover {
+      color: #f84545; }
+  .header__title {
+    font-family: "Conv_Proxima Nova Light";
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 0.6em;
+    margin-bottom: 40px;
+    text-align: center; }
+  .header__subtitle {
+    font-family: "Conv_Proxima Nova Bold";
+    font-size: 30px;
+    color: #f84545;
+    letter-spacing: 0.4em;
+    margin-bottom: 240px;
+    text-align: center;
+    text-transform: uppercase; }
+  .header__slider {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    cursor: pointer; }
+    .header__slider:hover, .header__slider .fa-angle-down:hover {
+      color: #f84545; }
+
+.fa-angle-down {
+  font-size: 90px;
+  color: #fff; }
+
+.product {
+  width: 100%;
+  padding: 0 15px; }
+  .product__wrap {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 80px 0; }
+  .product__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .product__container--top {
+      margin-bottom: 55px; }
+  .product__content {
+    position: relative;
+    width: 100%;
+    max-width: calc(100% - ((100% - 110px) / 3) - 55px);
+    height: 780px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    filter: brightness(70%); }
+    .product__content:hover {
+      filter: brightness(100%); }
+    .product__content--midel {
+      width: 100%;
+      max-width: calc((100% - 110px) / 3);
+      height: 580px; }
+    .product__content--box {
+      max-width: calc(100% - (100% - ((100% - 110px) / 3) - 55px) - 55px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .product__content--small {
+      min-width: 100%;
+      height: 100%;
+      max-height: calc((100% - 55px) / 2); }
+  .product__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .product__logo {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 140px;
+    left: 50px; }
+    .product__logo--small {
+      bottom: 140px;
+      left: 35px;
+      width: 100%;
+      height: 110px; }
+  .product__title {
+    font-family: "Conv_Proxima Nova Light";
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 60px;
+    left: 50px; }
+    .product__title--small {
+      font-family: "Conv_Proxima Nova Light";
+      font-size: 40px;
+      color: #fff;
+      bottom: 35px;
+      left: 35px; }
+
+.instagram {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative; }
+  .instagram__container {
+    width: 25%;
+    height: 430px;
+    filter: brightness(40%);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer; }
+    .instagram__container:hover {
+      filter: brightness(100%); }
+  .instagram__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .instagram__content {
+    width: 100%;
+    max-width: 1500px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .instagram__title {
+    font-family: "Conv_Proxima Nova Light";
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 0.6em;
+    margin-bottom: 40px;
+    text-transform: uppercase; }
+  .instagram__subtitle {
+    font-family: "Conv_Proxima Nova Bold";
+    font-size: 30px;
+    color: #f84545;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.footer {
+  width: 100%;
+  height: 150px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__wrap {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__container {
+    width: 100%;
+    max-width: 1000px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .footer__copy {
+    font-family: "Conv_Proxima Nova Semibold";
+    font-size: 18px;
+    color: #1a1a1a;
+    letter-spacing: 0.35em;
+    text-transform: uppercase; }
+  .footer__links {
+    font-family: "Conv_Proxima Nova Semibold";
+    font-size: 18px;
+    color: #1a1a1a;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 60px;
+    transition: all 0.4s ease-in-out; }
+    .footer__links:hover {
+      color: #f84545; }
+  .footer__social {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: flex-end; }
+  .footer__icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none; }
+    .footer__icon--mlr {
+      margin-left: 25px;
+      margin-right: 25px; }
+  .footer__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+/*# sourceMappingURL=main.css.map */

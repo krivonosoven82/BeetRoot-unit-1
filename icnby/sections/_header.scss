@@ -1,0 +1,99 @@
+.header{
+  width: 100%;
+  height: 100vh;
+  min-height: 895px;
+  position: relative;
+
+  &__background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__wrap{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    padding-top: 40px;
+  }
+
+  &__top{
+    width: 100%;
+    height: auto;
+    margin-bottom: 255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+    width: 225px;
+    height: 90px;
+  }
+
+  &__icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__links{
+    margin-right: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include fonts('Conv_Proxima Nova Semibold', 18px, $white);
+    letter-spacing: 0.35em;
+    @include transition;
+
+    &--notmr{
+      margin: 0;
+    }
+
+    &:hover{
+      color: $red;
+    }
+  }
+
+  &__title{
+    @include fonts('Conv_Proxima Nova Light', 60px, $white);
+    letter-spacing: 0.6em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__subtitle{
+    @include fonts('Conv_Proxima Nova Bold', 30px, $red);
+    letter-spacing: 0.4em;
+    margin-bottom: 240px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__slider{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover, .fa-angle-down:hover{
+      color: $red;
+    }
+  }
+}
+
+.fa-angle-down{
+    font-size: 90px;
+    color: $white;
+}

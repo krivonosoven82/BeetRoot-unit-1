@@ -1,0 +1,52 @@
+.instagram{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+
+  &__container{
+    width: 25%;
+    height: 430px;
+    filter: brightness(40%);
+    @include transition;
+    cursor: pointer;
+
+    &:hover{
+      filter: brightness(100%);
+    }
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content{
+    width: 100%;
+    max-width: 1500px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title{
+    @include fonts('Conv_Proxima Nova Light', 60px, $white);
+    letter-spacing: 0.6em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle{
+    @include fonts('Conv_Proxima Nova Bold', 30px, $red);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
