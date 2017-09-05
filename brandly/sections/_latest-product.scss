@@ -1,0 +1,158 @@
+.latest-product{
+  padding: 0 15px;
+
+  &__container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
+  &__title{
+    position: relative;
+    margin-bottom: 60px;
+    padding: 25px 0;
+    @include fonts('Open Sans', 18px, $black);
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+
+
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 111px;
+      height: 3px;
+      background-color: $red;
+    }
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      content: '';
+      width: 111px;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+
+
+  &__content{
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--bottom{
+    margin-bottom: 0;
+    }
+  }
+
+  &__item{
+    width: 100%;
+    max-width: calc((100% - 60px) / 3);
+    height: 420px;
+    overflow: hidden;
+
+    &--large{
+      max-width: calc((100% - 30px) / 2);
+    }
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay{
+    position: absolute;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    &--bottom{
+    margin-bottom: 0;
+    }
+  }
+
+  &__item-over{
+    width: 100%;
+    max-width: calc((100% - 60px) / 3);
+    height: 420px;
+    cursor: pointer;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include transition;
+
+    &:hover{
+      opacity: 1;
+      background-color: $backgroundItemOver;
+    }
+
+    &--large{
+      max-width: calc((100% - 30px) / 2);
+    }
+  }
+
+  &__text-over{
+    width: 315px;
+    height: 355px;
+    @include fonts('Open Sans', 40px, $white);
+    font-family: 300;
+    font-style: italic;
+    border: 3px solid $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+  }
+
+  &__text-overlarge{
+    position: relative;
+    padding: 15px;
+    @include fonts('Lato', 45px, $white);
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+
+    &--right{
+      text-transform: uppercase;
+    }
+
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 192px;
+      height: 1px;
+      background-color: $white;
+    }
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      content: '';
+      width: 192px;
+      height: 1px;
+      background-color: $white;
+    }
+  }
+}

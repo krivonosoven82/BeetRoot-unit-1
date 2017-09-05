@@ -1,0 +1,116 @@
+.blog{
+  padding: 0 15px;
+
+  &__container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
+  &__title{
+    position: relative;
+    margin-bottom: 60px;
+    padding: 25px 0;
+    @include fonts('Open Sans', 18px, $black);
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+
+
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 111px;
+      height: 3px;
+      background-color: $red;
+    }
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      content: '';
+      width: 111px;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+
+  &__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  &__item{
+    width: 100%;
+    max-width: calc((100% - 30px) / 2);
+    height: 100%;
+  }
+
+  &__photo{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__item-title{
+    @include fonts('Lato', 30px, $red);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle{
+    @include fonts('Lato', 16px, $blogSubtitle);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+  }
+
+  &__text{
+    margin-bottom: 30px;
+    padding: 25px 0;
+    @include fonts('Open Sans', 18px, $blogText);
+    font-weight: 300;
+    line-height: 1.33em;
+    border-top: 1px solid $blogTextBorder;
+    border-bottom: 1px solid $blogTextBorder;
+  }
+
+  &__btn{
+      width: 170px;
+      height: 51px;
+      background-color: transparent;
+      border: 1px solid $black;
+      @include fonts('Open Sans', 16px, $black);
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      @include transition;
+
+      &:hover{
+        background-color: $black;
+        color: $white;
+      }
+  }
+
+}

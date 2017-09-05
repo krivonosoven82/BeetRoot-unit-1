@@ -1,0 +1,181 @@
+.trending-items{
+  padding: 0 15px;
+  background: url(../img/trending-items/background-items.jpg) no-repeat $gray;
+
+  &__container{
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title{
+    position: relative;
+    margin-bottom: 60px;
+    padding: 25px 0;
+    @include fonts('Open Sans', 18px, $black);
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 111px;
+      height: 3px;
+      background-color: $red;
+    }
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      content: '';
+      width: 111px;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+
+  &__content{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    width: 100%;
+    max-width: calc((100% - 30px) / 2);
+    height: 570px;
+    overflow: hidden;
+
+    &--toRight{
+      padding: 25px 0;
+    }
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__form{
+    height: 100%;
+  }
+
+  &__form-title{
+    @include fonts('Lato', 30px, $red);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__form-subtitle{
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 27px;
+    @include fonts('Open Sans', 18px, $formText);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(50%);
+      content: '';
+      width: 30px;
+      height: 1px;
+      background-color: $formAfter;
+    }
+  }
+
+  &__text{
+    @include fonts('Lato', 18px, $formText);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.38em;
+    margin-bottom: 30px;
+
+    &--subtitle{
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    &--bottom{
+      letter-spacing: 0.08em;
+      margin-bottom: 70px;
+    }
+  }
+//-----------------------------------------------
+  &__checkbox{
+    border: 1px solid red;
+    height: 51px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+
+//------------------------------------------------
+  &__btn{
+    width: 170px;
+    height: 51px;
+    background-color: transparent;
+    border: 1px solid $black;
+    margin-right: 30px;
+    @include fonts('Open Sans', 16px, $black);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include transition;
+
+    &:hover{
+      background-color: $black;
+      color: $white;
+    }
+    &--notmr{
+      margin-right: 0;
+    }
+  }
+
+  &__slider{
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__select{
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: $gray;
+    @include transition;
+    cursor: pointer;
+
+    &:hover{
+      width: 16px;
+      height: 16px;
+      border-color: $red;
+      background-color: transparent;
+    }
+  }
+}
