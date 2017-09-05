@@ -515,6 +515,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
+  .subscribe__label {
+    position: relative; }
   .subscribe__text {
     font-family: "Open Sans";
     font-size: 18px;
@@ -527,7 +529,7 @@ body {
     width: 770px;
     height: 51px;
     margin-right: 15px;
-    padding: 0 25px 0 50px;
+    padding: 0 25px 0 80px;
     border: 1px solid #fff;
     background-color: transparent;
     font-family: "Open Sans";
@@ -563,7 +565,19 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase; }
 
+.fa-envelope-o {
+  position: absolute;
+  bottom: 15px;
+  left: 28px;
+  color: #fff; }
+
 .footer {
-  height: 160px; }
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fa-heart {
+  color: #dc0000; }
 
 /*# sourceMappingURL=main.css.map */

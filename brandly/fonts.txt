@@ -1,6 +1,0 @@
-<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans:300,300i,400" rel="stylesheet">
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans:300,300i,400');
-
-font-family: 'Open Sans', sans-serif;
-font-family: 'Lato', sans-serif;
