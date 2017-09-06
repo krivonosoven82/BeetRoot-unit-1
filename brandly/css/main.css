@@ -352,9 +352,35 @@ body {
       letter-spacing: 0.08em;
       margin-bottom: 70px; }
   .trending-items__checkbox {
-    border: 1px solid red;
+    width: 100%;
     height: 51px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; }
+  .trending-items__label {
+    margin-right: 30px; }
+  .trending-items__input {
+    display: none; }
+    .trending-items__input:checked + span {
+      color: #fff;
+      background-color: #333; }
+  .trending-items__size {
+    display: inline-block;
+    border: 1px solid #333;
+    border-left-color: #afafaf;
+    border-right-color: #afafaf;
+    position: relative;
+    width: 70px;
+    height: 51px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .trending-items__btn {
     width: 170px;
     height: 51px;

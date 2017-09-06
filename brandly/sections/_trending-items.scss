@@ -120,17 +120,45 @@
     }
   }
 //-----------------------------------------------
-  &__checkbox{
-    border: 1px solid red;
-    height: 51px;
-    margin-bottom: 30px;
+&__checkbox{
+  width: 100%;
+  height: 51px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+&__label{
+  margin-right: 30px;
+}
+
+&__input{
+  display: none;
+  //@include transition;
+
+  &:checked + span{
+    color: $white;
+    background-color: $black;
   }
+}
 
+&__size{
+  display: inline-block;
+  border: 1px solid $black;
+  border-left-color: $borderCheck;
+  border-right-color: $borderCheck;
+  position: relative;
+  width: 70px;
+  height: 51px;
+  @include fonts('Open Sans', 16px, $black);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-
-//------------------------------------------------
   &__btn{
     width: 170px;
     height: 51px;
