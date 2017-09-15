@@ -260,7 +260,7 @@ body {
     margin-bottom: 45px;
     overflow: hidden; }
   .container__img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: scale-down; }
   .container__title {
@@ -280,7 +280,7 @@ body {
 
 .about-us {
   padding: 0 15px;
-  background: url(../img/about-us/bg-about.png) no-repeat;
+  background: url(../img/about-us/bg-about.png) fixed no-repeat;
   background-size: cover; }
   .about-us__wrap {
     width: 100%;
@@ -345,7 +345,7 @@ body {
     .about-us__link:hover, .about-us__link:hover > span {
       font-size: 36px; }
   .about-us__img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: scale-down; }
 
@@ -595,6 +595,22 @@ body {
   to {
     transform: rotate(360deg); } }
 ::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #676767;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize; }
+
+::-moz-placeholder {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #676767;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize; }
+
+:-moz-placeholder {
   font-family: "Lato";
   font-size: 18px;
   color: #676767;

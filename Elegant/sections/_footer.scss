@@ -157,3 +157,16 @@
   font-style: italic;
   text-transform: capitalize;
 }
+::-moz-placeholder{
+  @include fonts('Lato', 18px, $placeholder);
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+:-moz-placeholder{
+  @include fonts('Lato', 18px, $placeholder);
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+}
