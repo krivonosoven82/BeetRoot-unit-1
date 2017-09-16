@@ -608,7 +608,8 @@ body {
   color: #676767;
   font-weight: 400;
   font-style: italic;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  opacity: 1; }
 
 :-moz-placeholder {
   font-family: "Lato";
@@ -616,6 +617,7 @@ body {
   color: #676767;
   font-weight: 400;
   font-style: italic;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
