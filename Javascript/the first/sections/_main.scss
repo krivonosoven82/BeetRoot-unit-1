@@ -1,0 +1,29 @@
+.wrap{
+  padding: 15px;
+
+  &__container{
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
+  &__block{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input{
+    margin-right: 20px;
+  }
+
+}
+#test{
+  width: 1px;
+  height: 20px;
+  background-color: green;
+}
+
+#blocks{
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}

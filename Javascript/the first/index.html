@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My first code</title>
+  <meta name="description" content="the first">
+  <meta name="keyboard" content="the first">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="wrap__container">
+      <label><input type="checkbox" id="check" onchange="func1()">Click me</label>
+    </div>
+
+    <div class="wrap__container">
+      <label><input type="checkbox" name="radio" value="1">1</label>
+      <label><input type="checkbox" name="radio" value="2">2</label>
+      <label><input type="checkbox" name="radio" value="3">3</label>
+      <button onclick="func2()">Проверка</button>
+    </div>
+
+    <div class="wrap__container">
+      <select name="" id="mySelect" onchange="func3()">
+        <option value="0">Apple</option>
+        <option value="1">Sumsung</option>
+        <option value="2">Simens</option>
+        <option value="3">Nokia</option>
+      </select>
+    </div>
+
+    <div class="wrap__container">
+      <div class="wrap__block">
+        <input class="wrap__input" type="range" id="ran" min="0" max="100" step="1" oninput="func4()" value="1">
+        <input type="text" id="info">
+      </div>
+      <div id="test" class="wrap__box"></div>
+    </div>
+
+    <div class="block1">
+      <p>Top left angle:
+        <input type="range" id="rtl" min="0" max="100"  value="0" oninput="func5()">
+        <input type="text" id="ttl" value="0">
+      </p>
+      <p>Top right angle:
+        <input type="range" id="rtr" min="0" max="100" value="0" oninput="func5()">
+        <input type="text" id="ttr" value="0">
+      </p>
+      <p>Bottom right angle:
+        <input type="range" id="rbr" min="0" max="100"  value="0" oninput="func5()">
+        <input type="text" id="tbr" value="0">
+      </p>
+      <p>Bottom left angle:
+        <input type="range" id="rbl" min="0" max="100"  value="0" oninput="func5()">
+        <input type="text" id="tbl" value="0">
+      </p>
+      <div id="blocks"></div>
+
+    </div>
+
+  </div>
+  <script src="js/myscript.js"></script>
+</body>
+</html>
