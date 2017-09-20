@@ -2,7 +2,6 @@ const ADMIN = 'admin';
 const PASSWORD = 'Черный властелин';
 let who, name, password;
 
-
 function enterPassword(){
   if(password == false){
     alert('Вход отменен');
@@ -12,7 +11,6 @@ function enterPassword(){
     alert('Добро пожаловать!!!)))');
   }
 }
-
 
 who = prompt('Кто вы?');
 
@@ -24,38 +22,3 @@ if(who == null){
   password = prompt('Введите пароль', '');
   enterPassword();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// who = prompt('Enter who are you...', '');
-//
-//  if(who == ADMIN){
-//    password = prompt('Enter password');
-//  }else{
-//    console.log('no');
-//
-//  }
-//
-//  if(password == PASSWORD){
-//    console.log('ok');
-//  }else{
-//    console.log('no');
-//  }
-//
-//
-// let text = prompt('');
-// alert(text);
