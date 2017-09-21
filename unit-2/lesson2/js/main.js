@@ -1,6 +1,6 @@
 const ADMIN = 'admin';
 const PASSWORD = 'Черный властелин';
-let who, name, password;
+let who, password;
 
 function enterPassword(){
   if(password == false){
