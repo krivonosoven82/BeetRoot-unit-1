@@ -1,0 +1,121 @@
+body{
+  margin: 0 20px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+header{
+  background-color: #775846;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  margin: 0;
+  height: 70px;
+}
+header:first-child{
+padding-top: 7px;
+padding-bottom: 7px;
+}
+/*-------------------------------------------------------*/
+hr{
+  display: block;
+  height: 2px;
+  margin: 0 0 0 -20px;
+  padding: 0;
+  background-color: black;
+  width: 1863px;
+}
+main{
+  background-color: lightyellow;
+}
+article{
+  margin: 0 20px;
+}
+h2 + p{
+  font-style: italic;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+}
+
+main>article>h2{
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: blue;
+}
+/*----------------------------------------------------*/
+.block{
+  display:block;
+  height: 600px;
+  padding-top: 60px;
+  color: white;
+
+}
+.aboutMe{
+  display: block;
+  background-color: lightgreen;
+  border-top: 2px solid green;
+  border-right: 2px solid green;
+  border-radius: 10px;
+  float: left;
+  margin: 200px 0 0 80px;
+  padding: 0 0 0 40px;
+  width: 350px;
+  height: 250px;
+
+
+}
+.links{
+  display: block;
+  border-radius: 10px;
+  background-color: lightblue;
+  border-top: 2px solid blue;
+  border-right: 2px solid blue;
+  float: left;
+  margin: 100px 30% 0 17%;
+  padding: 20px 0 0 40px ;
+  width: 200px;
+  height: 120px;
+}
+.photo{
+  display: block;
+
+  border-radius: 10px;
+  background-color: #F9CC9D;
+  border-top: 2px solid orange;
+  border-right: 2px solid orange;
+  float: right;
+  margin: -250px 80px 0 0;
+  padding: 0 0 0 40px;
+  width: 270px;
+}
+
+span{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+main>span{
+  padding-left: 20px;
+
+}
+img{
+  height: 300px;
+  margin: 0 0 20px 20px;
+}
+
+
+
+/*-------------------------------------------------------*/
+footer{
+  border-radius: 15px 15px 0 0;
+  height: 150px;
+  background-color: #775846;
+  color: white;
+  margin-top: -15px;
+
+}
+footer>address{
+  padding: 40px 0 0 20px;
+}
