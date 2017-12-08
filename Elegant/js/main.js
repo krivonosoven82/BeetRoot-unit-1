@@ -1,8 +1,11 @@
 $(document).ready(function() {
+//==========the start of script
 
+//----------show menu----------
   $("#menu").click(function () {
-    $(".header__nav").toggleClass("header__nav--open");
-    $(".nav__btn").toggleClass("nav__btn--animate");
+    $(".header__nav").toggleClass("nav--open");
   });
 
+
+//==========the end of script
 });

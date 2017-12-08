@@ -1,14 +1,21 @@
 .header{
+  position: relative;
   width: 100%;
-  height: 100vh;
-  padding: 50px 15px;
+  min-height: 100vh;
+  padding: 0 15px;
   background: url(../img/header/HERO-Img.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  &__wrap{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__menu{
     width: 24px;
@@ -17,8 +24,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 3px;
-    background-color: $white;
+    background-color: transparent;
+    border: none;
+    outline: none;
     @media (max-width: 550px){
       display: flex;
     }
@@ -26,7 +34,7 @@
 
 
   &__line{
-    width: 20px;
+    width: 30px;
     height: 4px;
     background-color: $scroll;
     border-radius: 1px;
@@ -35,19 +43,16 @@
   &__head{
     width: 100%;
     max-width: 1170px;
+    padding: 0 15px;
     height: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     @media (max-width: 800px){
-      display: flex;
       flex-direction: column;
       align-items: center;
     }
     @media (max-width: 550px){
-      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
@@ -58,7 +63,7 @@
     width: 100%;
     max-width: 109px;
     @media (max-width: 800px){
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     @media (max-width: 550px){
       margin-bottom: 0;
@@ -66,22 +71,13 @@
   }
 
   &__nav{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 70px;
-
     @media (max-width: 550px){
       display: none;
       padding-right: 0;
-      &.header__nav--open {
-        display: block;
-      }
     }
   }
 
   &__content{
-    width: 100%;
-    max-width: 630px;
     text-align: center;
   }
 
@@ -92,6 +88,11 @@
     text-transform: uppercase;
     padding-bottom: 50px;
     margin-bottom: 40px;
+    @media (max-width: 568px){
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
 
     &::after{
       position: absolute;
@@ -104,50 +105,48 @@
       background-color: $white;
     }
   }
-
   &__description{
     @include fonts('Lato', 22px, $navLink);
     font-weight: 400;
     line-height: 1.36em;
     letter-spacing: 0.05em;
+    @media (max-width: 568px){
+      font-size: 18px;
+    }
   }
 
   &__scroll{
+    position: relative;
     display: inline-block;
-    width: 93px;
-    height: 93px;
-    border: 3px solid $scroll;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     @include transition;
-    @media (max-width: 800px){
-      width: 31px;
-      height: 31px;
-    }
-    &:hover{
-      background-color: $scrollBg;
-    }
   }
 }
-
 .fa-angle-down{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 45px;
   color: $scroll;
-  animation: scale 2s infinite;
+  animation: upDown 3s infinite;
   animation-timing-function: ease-in-out;
-  @media (max-width: 800px){
-    font-size: 20px;
-  }
+  @include transition;
 }
 
 //----------nav----------
 .nav{
-  width: 100%;
-  max-width: 630px;
-
+  &--open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
   &__group{
     list-style: none;
     display: flex;
@@ -157,7 +156,6 @@
       flex-direction: column;
     }
   }
-
   &__item{
     display: inline-block;
     margin-left: 50px;
@@ -165,24 +163,27 @@
       margin-left: 20px;
     }
     @media (max-width: 550px){
-      width: 100%;
+      width: 150px;
+      height: 40px;
       margin-left: 0;
-      padding: 10px;
-      text-align: center;
-      background-color: $scroll;
-      border-bottom: 1px solid $placeholder;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $scrollBg;
+      border-radius: 4px;
+      box-shadow: inset 0 0 2px 2px $black;
     }
     &:first-child{
       margin-left: 0;
     }
   }
-
   &__link{
     @include fonts('Conv_Lato-Medium', 14px, $navLink);
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 1px 1px 2px $black;
     @include transition;
-
     &:hover{
       color: $logoLine;
     }
@@ -197,13 +198,14 @@
   flex-wrap: nowrap;
   align-items: center;
   margin-right: 15px;
-
+  @media(max-width: 800px){
+    margin-right: 0;
+  }
   &__group{
     display: flex;
     flex-direction: column;
     margin-right: 5px;
   }
-
   &__line{
     display: block;
     width: 15px;
@@ -215,7 +217,6 @@
       margin: 4px 0;
     }
   }
-
   &__text{
     @include fonts('Conv_Lato-Medium', 20px, $navLink);
     text-transform: uppercase;

@@ -4,33 +4,9 @@
   background-size: cover;
 
   &__wrap{
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 110px 0 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  &__title{
-    position: relative;
-    @include fonts('Raleway', 35px, $white);
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 60px;
-    margin-bottom: 60px;
-
-    &::after{
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      content: '';
-      width: 86px;
-      height: 2px;
-      background-color: $white;
-    }
   }
 
   &__container{
@@ -109,7 +85,7 @@
   }
 
   &__btn{
-    width: 183px;
+    width: 320px;
     height: 60px;
     border: 3px solid $white;
     background-color: transparent;
@@ -119,12 +95,36 @@
     letter-spacing: 0.04em;
     cursor: pointer;
     @include transition;
+    @media(max-width: 400px){
+      width: 300px;
+    }
     &:hover{
       background-color: $white;
       animation: scale 2s 1;
       animation-timing-function: ease-in-out;
       color: $black;
+      @media(max-width: 700px){
+        animation: none;
+      }
     }
+  }
+}
+
+@keyframes upDown{
+  0%{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  50%{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100%{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -141,7 +141,7 @@
 
   &:hover{
     color: $logoLine;
-    animation: rotate 2s 1;
+    animation: rotate 1s 1;
     animation-timing-function: ease-in-out;
   }
 

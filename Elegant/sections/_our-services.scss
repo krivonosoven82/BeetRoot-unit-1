@@ -2,35 +2,10 @@
   padding: 0 15px;
 
   &__wrap{
-    width: 100%;
-    max-width: 1170px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 110px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  &__title{
-    position: relative;
-    @include fonts('Raleway', 35px, $black);
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 70px;
-    margin-bottom: 80px;
-
-    &::after{
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      content: '';
-      width: 86px;
-      height: 2px;
-      background-color: $black;
-    }
   }
 }
 
@@ -58,6 +33,9 @@
     @media (max-width: 870px){
       max-width: 100%;
       margin-bottom: 20px;
+      @media (max-width: 768px){
+        height: 260px;
+      }
     }
   }
 
@@ -75,7 +53,7 @@
   }
 
   &__title{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include fonts('Lato', 24px, $black);
     font-weight: 400;
     text-transform: capitalize;

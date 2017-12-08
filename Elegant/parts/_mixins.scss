@@ -4,6 +4,6 @@
   color: $color;
 }
 
-@mixin transition($time: 0.8s){
+@mixin transition($time: 0.4s){
   transition: all $time ease-in-out;
 }
